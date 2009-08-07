@@ -5,8 +5,12 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "flvorflv"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{A tiny wrapper around the flvstreamer}
+    gem.description = %Q{
+      A tiny wrapper around the flvstreamer, an open source command-line RTMP client: http://savannah.nongnu.org/projects/flvstreamer/
+
+      It really just lets you interact with it from Ruby, and to specify the long options using a hash
+    }
     gem.email = "josh@technicalpickles.com"
     gem.homepage = "http://github.com/technicalpickles/flvorflv"
     gem.authors = ["Joshua Nichols"]
