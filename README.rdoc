@@ -1,6 +1,9 @@
 = flvorflv
 
-Description goes here.
+Flvorflv(:rtmp => 'rtmp://hostname/something.flv',
+	 :start => 1.second,
+	 :stop => 2.seconds,
+	 :output => 'something.flv')
 
 == Note on Patches/Pull Requests
  
