@@ -10,6 +10,8 @@ begin
     gem.email = "josh@technicalpickles.com"
     gem.homepage = "http://github.com/technicalpickles/flvorflv"
     gem.authors = ["Joshua Nichols"]
+    gem.add_development_dependency "rspec"
+    gem.add_development_dependency "rr"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
 
@@ -37,8 +39,6 @@ rescue LoadError
     abort "Cucumber is not available. In order to run features, you must: sudo gem install cucumber"
   end
 end
-
-
 
 task :default => :spec
 
