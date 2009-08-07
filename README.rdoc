@@ -1,9 +1,15 @@
 = flvorflv
 
-Flvorflv(:rtmp => 'rtmp://hostname/something.flv',
-	 :start => 1.second,
-	 :stop => 2.seconds,
-	 :output => 'something.flv')
+A tiny wrapper around the flvstreamer, an open source command-line RTMP client: http://savannah.nongnu.org/projects/flvstreamer/
+
+It really just lets you interact with it from Ruby, and to specify the long options using a hash. Call it like:
+
+Flvorflv.run(:rtmp => 'rtmp://hostname/something.flv',
+	     :start => 1,
+	     :stop => 2,
+	     :flv => 'something.flv')
+
+See flvstreamer --help for more usage notes.
 
 == Note on Patches/Pull Requests
  
